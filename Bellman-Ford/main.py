@@ -15,7 +15,6 @@ def Bellman_Ford(grafo):
     c = {0: {1: 0}}
     for i in range(2, len(grafo) + 1):
         c[0][i] = math.inf
-
     for l in range(1, len(grafo)):
         for k in range(1, len(grafo) + 1):
             c[l] = c.get(l, {})
