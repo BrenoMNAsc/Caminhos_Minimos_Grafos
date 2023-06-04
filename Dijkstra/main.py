@@ -15,7 +15,6 @@ def Dijkstra(grafo, v):
     c = {v:0}
     for i in range(2, len(grafo) +1):
         c.update({i:grafo[v][i]})
-    print(c)
     heap = [(c[i], i) for i in range(1,len(grafo) +1)]
     heapq.heapify(heap)
     while heap:
